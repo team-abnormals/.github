@@ -66,12 +66,26 @@ body:
         Please provide the client or server logs from your launcher. They contain vital information to troubleshoot the issue.
         To upload logs, you can use websites such as: https://pastebin.com/ https://paste.ee/ https://mclo.gs/
   - type: checkboxes
-    id: last_questions
+    id: confirm_minimal
     attributes:
-      label: Confirmations
+      label: Confirmation
       options:
         - label: I have tested this on a minimal instance
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm_duplicate
+    attributes:
+      label: Confirmation
+      options:
         - label: I have verified that this is not a duplicate of an existing (open or closed) issue
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm_mods
+    attributes:
+      label: Confirmation
+      options:
         - label: I have verified this issue is present without rendering & shader mods like Optifine, Iris, Oculus, etc.
     validations:
       required: true
