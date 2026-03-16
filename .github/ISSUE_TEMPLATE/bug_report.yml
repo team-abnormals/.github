@@ -73,3 +73,5 @@ body:
         - label: I have tested this on a minimal instance
         - label: I have verified that this is not a duplicate of an existing (open or closed) issue
         - label: I have verified this issue is present without rendering & shader mods like Optifine, Iris, Oculus, etc.
+    validations:
+      required: true
